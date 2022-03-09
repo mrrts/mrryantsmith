@@ -1,0 +1,40 @@
+.container {
+  @apply flex flex-col min-h-screen;
+}
+
+.header {
+  @apply h-auto text-3xl border-b border-b-black py-4 px-4 bg-slate-900 text-slate-50;
+}
+
+.appBody {
+  @apply flex flex-1 bg-slate-800 text-slate-50;
+}
+
+.nav {
+  @apply w-60 bg-slate-600 border-r border-r-black overflow-auto;
+}
+
+.navList {
+  @apply w-full h-full flex flex-col p-0 m-0;
+}
+
+.navItem {
+  @apply flex-1 w-full text-slate-50 flex items-center border-b border-b-black;
+}
+
+.navItem .navLink {
+  @apply py-4 px-4 w-full h-full flex flex-col items-center justify-center transition-all duration-200
+    hover:bg-slate-700;
+}
+
+.navItem .navLink.active {
+  @apply bg-blue-900 transition-all duration-200;
+}
+
+.navLink .buttonIcon {
+  @apply mb-3 h-20 w-20;
+}
+
+.main {
+  @apply p-6 flex-1;
+}
