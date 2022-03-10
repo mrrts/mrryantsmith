@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       </Head>
       <div className='home'>
         <h2 className={styles.homeHeading}>
-          Hello, I'm Ryan.
+          Hello, I&#39;m Ryan.
           <FontAwesomeIcon className={styles.headingIcon} icon={faHandshake} />
         </h2>
         <div className={`${styles.introduction} introduction`}>
