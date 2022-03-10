@@ -4,4 +4,9 @@
 
 html, body {
   font-family: 'Lato', sans-serif;
+  @apply font-extralight;
+}
+
+h2 {
+  @apply text-3xl font-thin;
 }

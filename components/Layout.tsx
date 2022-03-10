@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faEnvelope, faHomeUser, faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 import cn from 'classnames';
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 interface Props {
   children: JSX.Element | JSX.Element[]; 
@@ -18,7 +19,12 @@ const Layout: FC<Props> = ({ children }) => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1>Ryan Smith, Full-Stack Software Developer</h1>
+        <span className={styles.headshotLogo}>
+          <Image src='/headshot.png' alt='Ryan Smith' height='70' width='70' />
+        </span>
+        <h1>
+          Ryan Smith, Full-Stack Software Developer
+        </h1>
       </header>
       <div className={styles.appBody}>
         <nav className={styles.nav}>
@@ -27,7 +33,7 @@ const Layout: FC<Props> = ({ children }) => {
               <Link href='/'>
                 <a className={cn(styles.navLink, { [styles.active]: isActive('/') })}>
                   <FontAwesomeIcon className={styles.buttonIcon} icon={faHomeUser} />
-                  <span>Home</span>
+                  <span>Hello World</span>
                 </a>
               </Link>
             </li>  
