@@ -1,5 +1,5 @@
 .projectContainer {
-  @apply  bg-slate-700 rounded-md ml-4 p-4 my-8 border border-slate-500;
+  @apply  bg-slate-700 rounded-md ml-4 p-4 my-8 border border-slate-500 flex flex-col justify-center items-center;
 }
 
 .projectDescription {
@@ -16,10 +16,15 @@
 
 .projectHeading {
   @apply text-2xl font-light;
+  align-self: start;
+}
+
+.projectOrganization {
+  align-self: start;
 }
 
 .projectGallery {
-  @apply flex flex-row flex-wrap items-center justify-center;
+  @apply flex flex-row flex-wrap items-center justify-center max-w-lg;
 }
 
 .image {

@@ -18,17 +18,19 @@ export const Project: FC<Props> = ({ project }) => {
       <h3 className={styles.projectHeading}>{project.title}</h3>
       <p className={styles.projectOrganization}>{project.organization}</p>
       <div className={styles.projectDescription} dangerouslySetInnerHTML={{ __html: project.description }} />
-      {project.images?.length && (
+      {project.images?.length > 0 && (
         <div className={styles.projectGallery}>
           {project.images.map((image: ArrayElement<ProjectModel['images']>) => {
             return (
               <div key={image.url} className={styles.image} aria-describedby={`desc-${image.url}`}>
-                <Image
-                  src={image.url}
-                  alt={image.title}
-                  height={image.height}
-                  width={image.width}
-                />
+                <a className={styles.imageLink} href={image.url} target='_blank'>
+                  <Image
+                    src={image.url}
+                    alt={image.title}
+                    height={image.height}
+                    width={image.width}
+                  />
+                </a>
                 <div id={`desc-${image.url}`} className={styles.imageCaption}>
                   <p className={styles.imageTitle}>{image.title}</p>
                   <p className={styles.imageDescription}>{image.description}</p>  
