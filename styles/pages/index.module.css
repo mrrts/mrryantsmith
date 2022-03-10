@@ -1,0 +1,40 @@
+.homeHeading {
+  @apply font-normal flex justify-start items-center;
+}
+
+.headingIcon {
+  height: 1em;
+  @apply ml-4;
+}
+
+.introduction {
+  @apply my-5 max-w-3xl;
+}
+
+.introduction p {
+  @apply my-3;
+}
+
+.techStack {
+  @apply my-4;
+}
+
+.techStack h3 {
+  @apply font-normal;
+}
+
+.techStack ul {
+  @apply list-disc ml-8;
+}
+
+.techStack ul > li {
+  @apply my-3;
+}
+
+.resumeLink a {
+  @apply flex justify-center items-center my-5 p-4 bg-blue-800 max-w-full w-80 rounded-md;
+}
+
+.resumeLink .downloadIcon {
+  @apply h-4 mr-2;  
+}
