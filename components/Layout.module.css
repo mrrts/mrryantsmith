@@ -3,7 +3,7 @@
 }
 
 .header {
-  @apply flex items-center h-auto text-3xl border-b border-b-black py-4 px-4 bg-slate-900 text-slate-50;
+  @apply flex items-center h-auto text-2xl border-b border-b-black py-4 px-4 bg-slate-900 text-slate-50;
 }
 
 .header .headshotLogo {
@@ -12,6 +12,9 @@
 
 .header .headshotLogo img {
   @apply rounded-full;
+  height: 70px;
+  width: 70px;
+  max-width: 70px;
 }
 
 .appBody {
@@ -42,7 +45,7 @@
 
 .navLink .buttonIcon {
   @apply mb-3;
-  height: 4vw;
+  height: 6vw;
   max-height: 3rem;
   min-height: 1rem;
 }
@@ -52,12 +55,20 @@
 }
 
 @media (min-width: 768px) {
-  .appBody {
-    @apply flex-row;
+  .container {
+    @apply h-screen max-h-screen;
   }
 
+  .header {
+    @apply text-3xl;
+  }
+
+  .appBody {
+    @apply flex-row flex-1 overflow-hidden;
+  }
+  
   .nav {
-    @apply w-40;
+    @apply w-40 h-full;
   }
 
   .navList {
@@ -70,6 +81,14 @@
 
   .navItem .navLink {
     @apply justify-center;
+  }
+
+  .navLink .buttonIcon {
+    height: 4vw;
+  }
+
+  .main {
+    @apply h-full overflow-y-auto;
   }
 }
 

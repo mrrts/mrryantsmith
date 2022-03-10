@@ -1,0 +1,35 @@
+.projectContainer {
+  @apply  bg-slate-700 rounded-md ml-4 p-4 my-8 border border-slate-500;
+}
+
+.projectDescription {
+  @apply my-8;
+}
+
+.projectDescription ul {
+  @apply list-disc pl-4;
+}
+
+.projectDescription ul > li {
+  @apply mb-3;
+}
+
+.projectHeading {
+  @apply text-2xl font-light;
+}
+
+.projectGallery {
+  @apply flex flex-row flex-wrap items-center justify-center;
+}
+
+.image {
+  @apply max-w-sm border border-slate-500 bg-slate-800 rounded-md p-5 mb-5;
+}
+
+.image img {
+  @apply rounded-md border-slate-900 mb-2;
+}
+
+.image .imageTitle {
+  @apply font-light mb-2;
+}
