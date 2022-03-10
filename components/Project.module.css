@@ -1,5 +1,6 @@
 .projectContainer {
-  @apply  bg-slate-700 rounded-md ml-4 p-4 my-8 border border-slate-500 flex flex-col justify-center items-center;
+  @apply  bg-slate-700 rounded-md ml-4 p-4 my-8 border border-slate-500 flex flex-col 
+    justify-center items-center max-w-3xl;
 }
 
 .projectDescription {
