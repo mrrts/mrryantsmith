@@ -51,7 +51,7 @@
 }
 
 .main {
-  @apply py-6 px-10 flex-1;
+  @apply p-6 flex-1;
 }
 
 @media (min-width: 768px) {
@@ -88,7 +88,7 @@
   }
 
   .main {
-    @apply h-full overflow-y-auto;
+    @apply h-full overflow-y-auto py-6 px-10;
   }
 }
 
