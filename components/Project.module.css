@@ -15,7 +15,7 @@
 }
 
 .projectHeading {
-  @apply text-2xl font-light;
+  @apply text-2xl font-normal;
   align-self: start;
 }
 
