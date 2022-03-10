@@ -23,7 +23,7 @@ export const Project: FC<Props> = ({ project }) => {
           {project.images.map((image: ArrayElement<ProjectModel['images']>) => {
             return (
               <div key={image.url} className={styles.image} aria-describedby={`desc-${image.url}`}>
-                <a className={styles.imageLink} href={image.url} target='_blank'>
+                <a className={styles.imageLink} href={image.url} target='_blank' rel='noreferrer'>
                   <Image
                     src={image.url}
                     alt={image.title}
