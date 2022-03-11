@@ -24,15 +24,15 @@ const Home: NextPage = () => {
         <div className={`${styles.introduction} introduction`}>
           <p>
             I am a curious and hard-working puzzle-solver with a background in theatre and music performance,
-            seeking my next role as a mid-level, full-stack developer.
+            seeking my next role as a mid-level full-stack developer.
           </p>
           <p>
-            As a JavaScript enthusiast, I am especially fond of working in stacks that include NodeJS and React,
+            I am especially fond of working in stacks that include NodeJS and React,
             although I adapt quickly to other tech stacks.
           </p>
           <p>
-            I started as a self-taught volunteer (sometimes hired) developer, and then attended the fantastic program at Dev Bootcamp.
-            I spent 5 rich and enjoyable years in the academic technology space at Everspring and would especially
+            I started as a self-taught volunteer (sometimes hired) developer, and then I attended the fantastic program at Dev Bootcamp.
+            I spent 5 rich and enjoyable years in the academic technology space at Everspring and would
             love to stay in that field as a growing specialist.
           </p>
         </div>
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           <h3>Professional Technical Experience</h3>
           <ul>
             <li>Front-End: HTML, CSS, SASS, JavaScript, Typescript, React (CRA, NextJS, Redux), Angular (Rxjs, Redux), JQuery</li>
-            <li>Back-End: Java (Spring), Scala (Play), NodeJS (Meteor, NestJS, Express), PHP, Ruby (Rails)</li>
+            <li>Back-End: Java (Spring), Scala (Play), NodeJS (Meteor, NestJS, Express), PHP, Ruby (Rails), SQL, MongoDB</li>
             <li>REST Apis, GraphQL, JSON, headless CMS, Drupal</li>
             <li>AWS (S3, EC2), Git, Docker</li>
             <li>Agile Methodology (Scrum)</li>

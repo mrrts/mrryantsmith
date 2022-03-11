@@ -8,7 +8,7 @@
 }
 
 .introduction {
-  @apply my-5 max-w-3xl;
+  @apply my-5 max-w-3xl p-5 bg-slate-700 rounded-md;
 }
 
 .introduction p {
@@ -32,7 +32,8 @@
 }
 
 .resumeLink a {
-  @apply flex justify-center items-center my-5 p-4 bg-blue-800 max-w-full w-80 rounded-md;
+  @apply flex justify-center items-center my-5 p-4 bg-blue-800 hover:bg-blue-900
+    max-w-full w-80 rounded-md;
 }
 
 .resumeLink .downloadIcon {
