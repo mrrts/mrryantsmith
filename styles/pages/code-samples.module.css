@@ -1,0 +1,27 @@
+.intro {
+  @apply my-5;
+}
+
+.exampleList li {
+  @apply p-5 my-5 rounded-md bg-slate-700;
+}
+
+.itemHeading {
+  @apply font-normal text-lg;
+}
+
+.itemDescription {
+  @apply mb-8;
+}
+
+.links {
+}
+
+.links a {
+  @apply inline-block bg-blue-700 p-3 mr-3 mb-2 rounded-md hover:bg-blue-900;
+}
+
+.links a .buttonIcon {
+  @apply mr-2;
+}
+
