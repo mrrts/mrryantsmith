@@ -32,7 +32,7 @@
 }
 
 .resumeLink a {
-  @apply flex justify-center items-center my-5 p-4 bg-blue-800 hover:bg-blue-900
+  @apply flex justify-center items-center my-5 p-4 bg-blue-700 hover:bg-blue-900
     max-w-full w-80 rounded-md;
 }
 

@@ -8,9 +8,9 @@ export const useEntranceAnimation = (targets: string) => {
     animationRef.current = anime({
       targets,
       delay: anime.stagger(300),
-      duration: 1000,
+      duration: 1300,
       opacity: [0, 1],
-      translateX: ['-30px', 0]
+      translateY: ['-30px', 0]
     })
   }, [targets])
 }
