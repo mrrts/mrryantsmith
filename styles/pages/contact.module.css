@@ -1,0 +1,9 @@
+.resumeLink a, .linkedInLink a {
+  @apply flex justify-center items-center my-5 p-4 bg-blue-700 hover:bg-blue-900
+    max-w-full w-80 rounded-md;
+}
+
+.resumeLink .icon,
+.linkedInLink .icon {
+  @apply h-4 mr-2;  
+}
