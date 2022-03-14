@@ -26,11 +26,11 @@ const Projects: FC<Props> = ({ projects }) => {
   return (
     <Layout>
       <Head>
-        <title>Projects</title>
+        <title>Project Highlights</title>
       </Head>
       
       <div className='projects'>
-        <h2>Projects</h2>
+        <h2>Project Highlights</h2>
 
         {projects.map((project: ProjectModel) => {
           return (
