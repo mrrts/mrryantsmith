@@ -45,7 +45,7 @@ const CodeSamples = () => {
           <li>
             <h3 className={styles.itemHeading}>This Portfolio Site</h3>
             <p className={styles.itemDescription}>
-              Built with NextJS back- and front-end for optimized static site generation. Integrated with Contentful CMS. Styled with TailwindCSS
+              Built with NextJS back- and front-end for optimized static site generation. Integrated with Strapi CMS. Styled with TailwindCSS
               utility classes and featuring responsive design and accessibility standards.
             </p>
 
