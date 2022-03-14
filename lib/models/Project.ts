@@ -1,14 +1,23 @@
+export interface ImageFormat {
+  height: number;
+  width: number;
+  url: string;
+}
+
+export type ImageFormats = Record<'large'|'medium'|'small'|'thumbnail', ImageFormat>;
+
 export interface Project {
   id: string;
   title: string;
   organization: string;
   description: string;
-  order: number;
+  startDate: string;
   images: {
-    title: string,
-    description: string,
+    alternativeText: string,
+    caption: string,
     url: string,
     width: number,
-    height: number
+    height: number,
+    formats: ImageFormats
   }[];
 }

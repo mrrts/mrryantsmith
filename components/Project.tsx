@@ -25,15 +25,15 @@ export const Project: FC<Props> = ({ project }) => {
               <div key={image.url} className={styles.image} aria-describedby={`desc-${image.url}`}>
                 <a className={styles.imageLink} href={image.url} target='_blank' rel='noreferrer'>
                   <Image
-                    src={image.url}
-                    alt={image.title}
+                    src={image.formats?.small?.url || image.url}
+                    alt={image.alternativeText}
                     height={image.height}
                     width={image.width}
                   />
                 </a>
                 <div id={`desc-${image.url}`} className={styles.imageCaption}>
-                  <p className={styles.imageTitle}>{image.title}</p>
-                  <p className={styles.imageDescription}>{image.description}</p>  
+                  <p className={styles.imageTitle}>{image.alternativeText}</p>
+                  <p className={styles.imageDescription}>{image.caption}</p>  
                 </div>
               </div>
             );
