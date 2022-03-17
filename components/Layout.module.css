@@ -46,7 +46,7 @@
 .navLink .buttonIcon {
   @apply mb-3;
   height: 6vw;
-  max-height: 2.5rem;
+  max-height: 35px;
   min-height: 1rem;
 }
 
