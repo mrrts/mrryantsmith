@@ -1,9 +1,9 @@
 .intro {
-  @apply my-5;
+  @apply my-5 max-w-3xl;
 }
 
 .exampleList li {
-  @apply p-5 my-5 rounded-md bg-slate-700;
+  @apply p-5 my-5 rounded-md bg-slate-700 max-w-3xl;
 }
 
 .itemHeading {
