@@ -26,7 +26,7 @@ const CodeSamples = () => {
         <ul className={styles.exampleList}>
           <li>
             <h3 className={styles.itemHeading}>Survey Town</h3>
-            <p className={styles.itemDescription}>A demo app wherein users may create, browse, and take surveys. Built with NestJS back-end and Create-React-App front-end, the
+            <p className={styles.itemDescription}>A demo app wherein users may create, browse, and take surveys. Built with NestJS back-end, using a Controller-Service-Repository pattern, and Create-React-App front-end, the
             app features responsive Bootstrap design, user authentication, dynamic components based on survey-item types, accessibility standards, and high
             unit test coverage.</p>
 
