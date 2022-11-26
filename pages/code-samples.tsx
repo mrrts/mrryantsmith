@@ -35,10 +35,10 @@ const CodeSamples = () => {
                 <FontAwesomeIcon icon={faGithub} className={styles.buttonIcon} />
                 View Source on GitHub
               </a>
-              <a href='https://surveytown.net' target='_blank' rel='noreferrer'>
+              <button href='#' disabled target='_blank' rel='noreferrer'>
                 <FontAwesomeIcon icon={faGlobe} className={styles.buttonIcon} />
-                View Live App
-              </a>
+                View Live App (temporarily inactive)
+              </button>
             </div>
           </li>  
  

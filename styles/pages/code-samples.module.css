@@ -17,12 +17,16 @@
 .links {
 }
 
-.links a {
+.links a, .links button {
   @apply inline-flex justify-center items-center bg-blue-700 py-3 px-5 mr-3 mb-2 rounded-md hover:bg-blue-900;
 }
 
-.links a .buttonIcon {
+.links a .buttonIcon, .links button .buttonIcon {
   @apply mr-2 inline-block;
   height: 1em;
+}
+
+.links button:disabled {
+  cursor: not-allowed;
 }
 
