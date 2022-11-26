@@ -35,7 +35,7 @@ const CodeSamples = () => {
                 <FontAwesomeIcon icon={faGithub} className={styles.buttonIcon} />
                 View Source on GitHub
               </a>
-              <button href='#' disabled target='_blank' rel='noreferrer'>
+              <button disabled>
                 <FontAwesomeIcon icon={faGlobe} className={styles.buttonIcon} />
                 View Live App (temporarily inactive)
               </button>
