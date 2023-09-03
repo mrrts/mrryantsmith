@@ -4,7 +4,7 @@ import styles from './Project.module.css';
 import cn from 'classnames';
 import { useEntranceAnimation } from '../lib/hooks/useEntranceAnimation.hook';
 import { ArrayElement } from '../lib/types';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 interface Props {
   project: ProjectModel;
