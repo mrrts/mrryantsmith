@@ -20,3 +20,10 @@ h2 {
     @apply font-thin;
   }
 }
+
+.home > *,
+.contact > *,
+.projects > *,
+.code-samples > * {
+  @apply opacity-0;
+}
