@@ -4,7 +4,7 @@ import styles from './Project.module.css';
 import cn from 'classnames';
 import { useEntranceAnimation } from '../lib/hooks/useEntranceAnimation.hook';
 import { ArrayElement } from '../lib/types';
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 interface Props {
   project: ProjectModel;
@@ -29,7 +29,10 @@ export const Project: FC<Props> = ({ project }) => {
                     alt={image.alternativeText}
                     height={image.height}
                     width={image.width}
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </a>
                 <div id={`desc-${image.url}`} className={styles.imageCaption}>
                   <p className={styles.imageTitle}>{image.alternativeText}</p>
