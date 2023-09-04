@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['assets.vercel.com', 'images.ctfassets.net', 'mrryantsmith-strapi.s3.us-east-1.amazonaws.com'],
+    domains: ['assets.vercel.com', 'cdn.sanity.io'],
     formats: ['image/avif', 'image/webp'],
   },
 }

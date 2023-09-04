@@ -1736,6 +1736,14 @@
     "@portabletext/toolkit" "^2.0.8"
     "@portabletext/types" "^2.0.6"
 
+"@portabletext/to-html@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@portabletext/to-html/-/to-html-2.0.3.tgz#83b2a6f266ab3c1f82e85137f287eb3f34743881"
+  integrity sha512-X+Z/2HUpGJgUoaBAFI9u2oeWixg7iy8GIwYIQ0kX7yU1L/s6+WOBIPRsaPLJygyzoqDTqx1Z1btRvQclEhXm5g==
+  dependencies:
+    "@portabletext/toolkit" "^2.0.8"
+    "@portabletext/types" "^2.0.6"
+
 "@portabletext/toolkit@^2.0.8":
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/@portabletext/toolkit/-/toolkit-2.0.8.tgz#15e6382120892ec40e6145e6736633f3e94c3c81"

@@ -1,88 +1,41 @@
-import { ImageFormat, ImageFormats, Project } from "./models/Project";
-import { marked } from 'marked';
-import { orderBy, map } from 'lodash';
+import { groq } from "next-sanity";
+import { PortableTextBlock, Reference } from "sanity";
+import { client } from "./sanity/client";
 
-const PROJECTS_QUERY = `
-{
-  projects {
-    data {
-      id
-      attributes {
-        title
-        description
-        organization
-        startDate
-        images {
-          data {
-            attributes {
-              alternativeText
-              caption
-              url
-              formats 
-              height
-              width
-            }
-          }
+const projectsQuery = groq`
+    *[_type == "project"] | order(startDate desc)
+    {
+        _id, 
+        title, 
+        startDate, 
+        organization, 
+        description, 
+        'images': images[] {
+            _key,
+            caption,
+            alt,
+            description,
+            asset
         }
-      }
     }
-  }
-}
 `;
 
-interface ImageAttributes {
-  alternativeText: string;
-  caption: string;
-  url: string;
-  formats: ImageFormats;
-  height: number;
-  width: number;
-}
-
-interface ProjectItemDtoAttributes {
+export type Project = {
+  _id: string;
   title: string;
-  organization: string;
-  description: string;
   startDate: string;
-  images: { data: { attributes: ImageAttributes }[] };
-}
-
-export interface ProjectItemDto {
-  id: string;
-  attributes: ProjectItemDtoAttributes;
-}
-
-export const fetchProjects = async (): Promise<Project[]> => {
-  const resp = await fetch(process.env.STRAPI_URL as string, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.STRAPI_ACCESS_TOKEN}`
-    },
-    body: JSON.stringify({
-      query: PROJECTS_QUERY
-    })
-  });
-
-  const json = await resp.json();
-  const itemDtos: ProjectItemDto[] = json?.data?.projects?.data ?? [];
-
-  const projects: Project[] = itemDtos.map(projectItemDtoToProject);
-
-  return orderBy(
-    projects,
-    'startDate',
-    'desc'
-  ) as Project[];
+  organization: string;
+  description: PortableTextBlock[];
+  images: {
+    _key: string;
+    caption: string;
+    alt: string;
+    description: PortableTextBlock[];
+    asset: Reference;
+  }[];
 };
 
-export const projectItemDtoToProject = (itemDto: ProjectItemDto): Project => {
-  return {
-    id: itemDto.id,
-    title: itemDto.attributes.title,
-    organization: itemDto.attributes.organization,
-    description: marked.parse(itemDto.attributes.description),
-    startDate: new Date(itemDto.attributes.startDate).toISOString(),
-    images: itemDto.attributes.images?.data?.map((imgAttrs) => imgAttrs.attributes) ?? []
-  };
-};
+export async function fetchProjects(): Promise<Project[]> {
+  const projects = await client.fetch<Project[]>(projectsQuery);
+  return projects;
+}
