@@ -1,6 +1,4 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import { useEntranceAnimation } from "../lib/hooks/useEntranceAnimation.hook";
@@ -45,14 +43,11 @@ const CodeSamples = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  className={styles.buttonIcon}
-                />
+                <FaGithub className={styles.buttonIcon} />
                 View Source on GitHub
               </a>
               <button disabled>
-                <FontAwesomeIcon icon={faGlobe} className={styles.buttonIcon} />
+                <FaGlobe className={styles.buttonIcon} />
                 View Live App (temporarily inactive)
               </button>
             </div>
@@ -73,10 +68,7 @@ const CodeSamples = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  className={styles.buttonIcon}
-                />
+                <FaGithub className={styles.buttonIcon} />
                 View Source on GitHub
               </a>
             </div>

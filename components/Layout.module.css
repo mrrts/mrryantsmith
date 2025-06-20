@@ -44,10 +44,7 @@
 }
 
 .navLink .buttonIcon {
-  @apply mb-3;
-  height: 6vw;
-  max-height: 35px;
-  min-height: 1rem;
+  @apply mb-3 h-[6vw] max-h-[35px] min-h-[1rem] text-3xl;
 }
 
 .main {

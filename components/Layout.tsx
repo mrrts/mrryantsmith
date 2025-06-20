@@ -1,13 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import styles from "./Layout.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCode,
-  faEnvelope,
-  faHomeUser,
-  faScrewdriverWrench,
-} from "@fortawesome/free-solid-svg-icons";
+import { FaCode, FaEnvelope, FaHouseUser, FaScrewdriver } from "react-icons/fa";
 import cn from "classnames";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -45,10 +39,7 @@ const Layout: FC<Props> = ({ children }) => {
                   [styles.active]: isActive("/"),
                 })}
               >
-                <FontAwesomeIcon
-                  className={styles.buttonIcon}
-                  icon={faHomeUser}
-                />
+                <FaHouseUser className={styles.buttonIcon} />
                 <span>Hello World</span>
               </Link>
             </li>
@@ -60,10 +51,7 @@ const Layout: FC<Props> = ({ children }) => {
                   [styles.active]: isActive("/projects"),
                 })}
               >
-                <FontAwesomeIcon
-                  className={styles.buttonIcon}
-                  icon={faScrewdriverWrench}
-                />
+                <FaScrewdriver className={styles.buttonIcon} />
                 <span>Projects</span>
               </Link>
             </li>
@@ -75,7 +63,7 @@ const Layout: FC<Props> = ({ children }) => {
                   [styles.active]: isActive("/code-samples"),
                 })}
               >
-                <FontAwesomeIcon className={styles.buttonIcon} icon={faCode} />
+                <FaCode className={styles.buttonIcon} />
                 <span>Code Samples</span>
               </Link>
             </li>
@@ -87,10 +75,7 @@ const Layout: FC<Props> = ({ children }) => {
                   [styles.active]: isActive("/contact"),
                 })}
               >
-                <FontAwesomeIcon
-                  className={styles.buttonIcon}
-                  icon={faEnvelope}
-                />
+                <FaEnvelope className={styles.buttonIcon} />
                 <span>Contact</span>
               </Link>
             </li>
