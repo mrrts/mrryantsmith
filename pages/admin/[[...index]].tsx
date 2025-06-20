@@ -1,7 +1,6 @@
 import Head from "next/head";
-import { NextStudio } from "next-sanity/studio";
+import { NextStudio, metadata } from "next-sanity/studio";
 import { StudioProvider, StudioLayout } from "sanity";
-import { metadata } from "next-sanity/studio/metadata";
 
 import config from "../../sanity.config";
 

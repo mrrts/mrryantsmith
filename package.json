@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/runtime": "^7.11.0",
+    "@codemirror/lint": "^6.0.0",
+    "@codemirror/theme-one-dark": "^6.0.0",
     "@contentful/rich-text-html-renderer": "^15.11.1",
     "@contentful/rich-text-react-renderer": "^15.11.1",
     "@contentful/rich-text-types": "^15.11.1",
@@ -22,17 +25,22 @@
     "@portabletext/react": "^3.0.7",
     "@portabletext/to-html": "^2.0.3",
     "@sanity/client": "^7.6.0",
+    "@sanity/icons": "^3.7.3",
     "@sanity/image-url": "^1.1.0",
+    "@sanity/types": "^3.0.0",
+    "@sanity/ui": "^2.16.2",
     "@sanity/vision": "^3.93.0",
     "animejs": "^3.2.1",
     "classnames": "^2.3.1",
+    "codemirror": "^6.0.0",
     "contentful": "^9.1.13",
     "lodash": "^4.17.21",
     "marked": "^4.0.12",
-    "next": "^13.4.19",
-    "next-sanity": "^5.4.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "next": "^15.3.4",
+    "next-sanity": "^9.12.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-is": "^18",
     "sanity": "^3.93.0",
     "sharp": "^0.30.2",
     "styled-components": "^6.0.7"
@@ -48,7 +56,7 @@
     "eslint-config-next": "^13.4.19",
     "postcss": "^8.4.8",
     "tailwindcss": "^3.0.23",
-    "typescript": "4.6.2"
+    "typescript": "^5.0.0"
   },
   "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
