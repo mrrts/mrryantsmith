@@ -2,7 +2,6 @@ import { FC } from "react";
 import { Project as ProjectModel } from "../lib/projects.api";
 import styles from "./Project.module.css";
 import cn from "classnames";
-import { useEntranceAnimation } from "../lib/hooks/useEntranceAnimation.hook";
 import { ArrayElement } from "../lib/types";
 import Image from "next/image";
 import { toHTML } from "@portabletext/to-html";
@@ -14,8 +13,6 @@ interface Props {
 }
 
 export const Project: FC<Props> = ({ project, id }) => {
-  useEntranceAnimation(".project-container > *");
-
   return (
     <div
       id={id}
