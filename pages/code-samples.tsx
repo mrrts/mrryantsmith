@@ -19,7 +19,7 @@ const CodeSamples = () => {
 
         <div className={styles.intro}>
           <p>
-            My professional projects at Everspring are proprietary, so I
+            My professional projects at Everspring and Pedago are proprietary, so I
             unfortunately cannot share the source code. Here are some recent
             code samples prepared for your perusal.
           </p>
