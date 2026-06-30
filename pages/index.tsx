@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <title>Ryan Smith, Full-Stack Software Engineer</title>
         <meta
           name="description"
-          content="A portfolio site for Ryan Smith, full-stack software developer"
+          content="A portfolio site for Ryan Smith, full-stack software engineer"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
