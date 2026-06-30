@@ -10,13 +10,18 @@ import { urlFor } from "../lib/sanity/imageBuilder";
 
 interface Props {
   project: ProjectModel;
+  id?: string;
 }
 
-export const Project: FC<Props> = ({ project }) => {
+export const Project: FC<Props> = ({ project, id }) => {
   useEntranceAnimation(".project-container > *");
 
   return (
-    <div className={cn(styles.projectContainer, "project-container")}>
+    <div
+      id={id}
+      style={{ scrollMarginTop: "1.5rem" }}
+      className={cn(styles.projectContainer, "project-container")}
+    >
       <h3 className={styles.projectHeading}>{project.title}</h3>
       <p className={styles.projectOrganization}>{project.organization}</p>
       <div

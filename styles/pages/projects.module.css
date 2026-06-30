@@ -1,0 +1,16 @@
+.jumpNav {
+  @apply flex flex-wrap items-center gap-2 my-5;
+}
+
+.jumpNavLabel {
+  @apply text-sm uppercase tracking-wide text-slate-400 mr-1;
+}
+
+.jumpNav a {
+  @apply text-sm px-3 py-1 rounded-full bg-slate-700 text-slate-100 no-underline transition-colors;
+}
+
+.jumpNav a:hover,
+.jumpNav a:focus {
+  @apply bg-slate-600;
+}
