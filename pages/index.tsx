@@ -49,15 +49,19 @@ const Home: NextPage = () => {
         <div className={`${styles.techStack} tech-stack`}>
           <h3>Professional Technical Experience</h3>
           <ul>
+            <li>Claude Code</li>
             <li>
               Front-End: HTML, CSS, SASS, JavaScript, Typescript, React (CRA,
               NextJS, Redux), Angular (Rxjs, Redux), JQuery
             </li>
             <li>
-              Back-End: Java (Spring), Scala (Play), NodeJS (Meteor, NestJS,
-              Express), PHP, Ruby (Rails), SQL, MongoDB
+              Back-End: Python, Java (Spring), Scala (Play), NodeJS (Meteor,
+              NestJS, Express), PHP, Ruby (Rails), SQL, MongoDB, and some Rust
             </li>
-            <li>REST Apis, GraphQL, JSON, headless CMS, Drupal</li>
+            <li>
+              REST Apis, GraphQL, JSON, headless CMS, Drupal, Canvas API, LTI,
+              custom AI agents
+            </li>
             <li>AWS (S3, EC2), Git, Docker</li>
             <li>Agile Methodology (Scrum)</li>
           </ul>
