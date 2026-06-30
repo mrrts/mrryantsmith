@@ -26,7 +26,7 @@ const Layout: FC<Props> = ({ children }) => {
             height={200}
           />
         </span>
-        <h1>Ryan Smith, Full-Stack Software Developer</h1>
+        <h1>Ryan Smith, Full-Stack Software Engineer</h1>
       </header>
       <div className={styles.appBody}>
         <nav className={styles.nav}>
