@@ -51,8 +51,8 @@ const Home: NextPage = () => {
           <ul>
             <li>Claude Code</li>
             <li>
-              Front-End: HTML, CSS, SASS, JavaScript, Typescript, React (CRA,
-              NextJS, Redux), Angular (Rxjs, Redux), JQuery
+              Front-End: HTML, CSS, SASS, TailwindCSS, JavaScript, Typescript,
+              React (CRA, NextJS, Redux), Angular (Rxjs, Redux), JQuery
             </li>
             <li>
               Back-End: Python, Java (Spring), Scala (Play), NodeJS (Meteor,
