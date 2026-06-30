@@ -19,7 +19,7 @@ export const Project: FC<Props> = ({ project, id }) => {
   return (
     <div
       id={id}
-      style={{ scrollMarginTop: "1.5rem" }}
+      style={{ scrollMarginTop: "4rem" }}
       className={cn(styles.projectContainer, "project-container")}
     >
       <h3 className={styles.projectHeading}>{project.title}</h3>
