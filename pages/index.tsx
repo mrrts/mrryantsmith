@@ -25,21 +25,25 @@ const Home: NextPage = () => {
         </h2>
         <div className={`${styles.introduction} introduction`}>
           <p>
-            I am a curious and hard-working puzzle-solver with a background in
-            theatre and music performance, seeking my next role as a mid-level
-            full-stack developer.
+            I am a curious, hard-working, and naturally visionary puzzle-solver
+            with a background in theatre and music performance, seeking new
+            opportunities as a full-stack software engineer, especially in the
+            EdTech space.
           </p>
           <p>
-            I am especially fond of working in stacks that include NodeJS and
-            React, although I adapt quickly to other tech stacks.
+            I am especially fond of working in stacks that include TypeScript
+            and React, although I adapt quickly to other tech stacks. I love
+            strongly typed, compiled backend languages, and enjoy both
+            functional and object-oriented programming.
           </p>
           <p>
             I started as a self-taught volunteer (sometimes hired) developer,
-            and then I attended the fantastic program at Dev Bootcamp. I spent 5
+            and then I attended the fantastic program at Dev Bootcamp. I spent 10
             rich and enjoyable years in the academic technology space at
-            Everspring and would love to stay in that field as a growing
-            specialist.
+            Everspring and Pedago and would love to stay in that field as a
+            growing specialist.
           </p>
+          <p>Claude Code and I are a great team.</p>
         </div>
 
         <div className={`${styles.techStack} tech-stack`}>
