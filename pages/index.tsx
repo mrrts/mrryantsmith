@@ -59,8 +59,8 @@ const Home: NextPage = () => {
               NestJS, Express), PHP, Ruby (Rails), SQL, MongoDB, and some Rust
             </li>
             <li>
-              REST Apis, GraphQL, JSON, headless CMS, Drupal, Canvas API, LTI,
-              custom AI agents
+              REST Apis, GraphQL, JSON, headless CMS, Drupal, DatoCMS, Canvas
+              API, LTI, custom AI agents
             </li>
             <li>AWS (S3, EC2), Git, Docker</li>
             <li>Agile Methodology (Scrum)</li>
